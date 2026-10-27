@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/data/
+backend/data/*.sqlite
+backend/data/*.sqlite-shm
+backend/data/*.sqlite-wal
+backend/test-uploads/

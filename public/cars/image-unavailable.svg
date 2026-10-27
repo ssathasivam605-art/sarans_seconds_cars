@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title description">
+  <title id="title">Car photo unavailable</title>
+  <desc id="description">A neutral placeholder displayed when a listing has no available photo.</desc>
+  <rect width="960" height="600" fill="#eef3f9"/>
+  <path d="M280 370h400l-36-105c-8-24-30-40-55-40H374c-25 0-47 16-55 40l-39 105Z" fill="#d2deed"/>
+  <path d="M245 365h470c17 0 30 13 30 30v39H215v-39c0-17 13-30 30-30Z" fill="#0b3d91"/>
+  <circle cx="320" cy="436" r="43" fill="#183a64"/>
+  <circle cx="320" cy="436" r="20" fill="#eef3f9"/>
+  <circle cx="640" cy="436" r="43" fill="#183a64"/>
+  <circle cx="640" cy="436" r="20" fill="#eef3f9"/>
+  <path d="M374 251h211c18 0 34 11 40 28l25 74H344l27-75c6-16 17-27 33-27Z" fill="#fff"/>
+  <text x="480" y="530" fill="#50647e" font-family="Arial,sans-serif" font-size="28" text-anchor="middle">Car photo unavailable</text>
+</svg>

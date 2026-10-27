@@ -1,0 +1,21 @@
+import { Router } from 'express';
+import asyncHandler from '../middleware/asyncHandler.js';
+import { requireAuth, requireAdmin } from '../middleware/auth.js';
+import { uploadImages } from '../middleware/upload.js';
+import { createCar, deleteCar, listCars, listUserCars, listUsers, recentActivities, stats, updateCar, updateUser } from '../controllers/adminController.js';
+import { listAdminEnquiries, updateEnquiryStatus } from '../controllers/enquiryController.js';
+
+const router = Router();
+router.use(requireAuth, requireAdmin);
+router.get('/stats', asyncHandler(stats));
+router.get('/cars', asyncHandler(listCars));
+router.post('/cars', uploadImages.array('images', 8), asyncHandler(createCar));
+router.patch('/cars/:id', uploadImages.array('images', 8), asyncHandler(updateCar));
+router.delete('/cars/:id', asyncHandler(deleteCar));
+router.get('/users', asyncHandler(listUsers));
+router.get('/users/:id/cars', asyncHandler(listUserCars));
+router.patch('/users/:id', asyncHandler(updateUser));
+router.get('/enquiries', asyncHandler(listAdminEnquiries));
+router.patch('/enquiries/:id', asyncHandler(updateEnquiryStatus));
+router.get('/activities', asyncHandler(recentActivities));
+export default router;
